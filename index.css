@@ -1,0 +1,113 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Barlow-Regular';
+    src: url('./fonts//Barlow-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Barlow-Bold';
+    src: url('./fonts/Barlow-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Barlow-Light';
+    src: url('./fonts/Barlow-Light.otf');
+}
+
+* {
+    font-family: 'Barlow-Regular';
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff6ff;
+}
+
+.register-card {
+    width: 90vw;
+    height: 90vh;
+}
+
+.register-card .left-image {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background: url('./img/bg.jpg') no-repeat no-repeat;
+    /* по макету изображение похоже, что 50%, но тут сама картинка маленькая => растягивается. С этим нужно что-то делать? */
+    background-size: cover;
+    background-position: center center;
+}
+
+.form {
+    height: 100%;
+    width: 50%;
+    float: right;
+    padding: 140px 100px;
+    background: #fff;
+}
+
+.form-title {
+    font-family: 'Barlow-Light';
+    font-size: 36px;
+    color: #2a4a5c;
+}
+
+.form-paragraph {
+    color: #7b8a92;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.third-party-apps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tpa-button {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-top: 80px;
+    padding: 20px;
+    font-family: 'Barlow-Light';
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.tpa-button img {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.tpa-button.facebook {
+    background-color: #255a9b;
+}
+
+.tpa-button.linkedin {
+    background-color: #0076b6;
+}
+
+.mock {
+    color: #eff6ff;
+    color: #2a4a5c;
+    color: #255a9b;
+    color: #0076b6;
+    color: #3698fb;
+    color: #7b8a92;
+    color: #96a5b1;
+    color: #afafaf;
+    color: #eeeeee;
+    color: #ffffff;
+}
